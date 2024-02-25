@@ -6,6 +6,8 @@ app = Flask(__name__, template_folder='template')
 users = [{"id": 1, 'name': 'mahmoud', 'age': 27, 'location': 'bani suef'},
          {"id": 2, 'name': 'mina', 'age': 30, 'location': 'cairo'}]
 
+
+
 #
 def get_id():
     if users:
@@ -79,7 +81,7 @@ if __name__ == '__main__':
 
 
 
-    
+
 # @app.route('/edit_user/<int:id>', methods=['GET', 'POST'])
 # def edit_user(id):
 #     user = next((u for u in users if u['id'] == id), None)
