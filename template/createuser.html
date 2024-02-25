@@ -1,0 +1,30 @@
+ {% extends "index.html" %} 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block form %}
+    <h1>createuser</h1>
+    <form style="width: 500px;" method="POST" action="{{ url_for('adduser') }}">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Age</label>
+          <input type="number" name="age" class="form-control" id="">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Location</label>
+            <input type="location" name="location" class="form-control" id="">
+          </div>
+        <button type="submit" class="btn btn-primary">Save User</button>
+      </form>
+    {% endblock %}
+    
+</body>
+</html>
