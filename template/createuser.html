@@ -3,9 +3,9 @@
     
     {% block form %}
     <body>
-        <div class="contianer" style="max-width: 400px; margin: auto;">
-               <h1>createuser</h1>
-    <form style="width: 500px;" method="POST"  action="{{ url_for('adduser') }}">
+      <div class="contianer" style="max-width: 400px; margin: auto;">
+       <h1>createuser</h1>
+       <form style="width: 500px;" method="POST"  action="{{ url_for('adduser') }}">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Name</label>
           <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
