@@ -5,7 +5,7 @@ from flask_pymongo import PyMongo
 app = Flask(__name__, template_folder='template')
 app.config["MONGO_URI"]="mongodb://127.0.0.1:27017/flask"
 mongo=PyMongo(app)
-users=list(mongo.db.Users.find({}))
+# users=list(mongo.db.Users.find({}))
 
 
 # def get_id():
